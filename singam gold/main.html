@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="#">
+    <title>Singam Gold</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div id="header">
+        <div id="menu"><i class='bx bx-menu'></i></div>
+        <div id="logo"> <i><b>S</b>ingam <b>G</b>old </i> </div>
+        <div id="user"><i class='bx bx-user'></i></div>
+        <div id="search"><i class='bx bx-search'></i></div>
+        <div id="cart"><i class='bx bx-shopping-bag'></i></div>
+    </div>
+    <div id="collection">
+        <nav>
+            <ul>
+                <li><a href="#" class="collect"> NEW ARRIVALS </a> </li>
+                <li> <a href="#" class="collect"> NECKLACES </a> </li>
+                <li> <a href="#" class="collect"> BRIDAL JEWELLERY </a> </li>
+                <li> <a href="#" class="collect"> NAKSHI JEWELLERY </a> </li>
+                <li> <a href="#" class="collect"> HIPBELTS </a> </li>
+                <li> <a href="#" class="collect"> BANGLES </a> </li>
+                <li> <a href="#" class="collect"> BRACELETS </a> </li>
+                <li> <a href="#" class="collect"> EARRINGS </a> </li>
+                <li> <a href="#" class="collect"> CHOKERS </a> </li>
+                <li>
+                    <select name="COLLECTIONS" id="drop">
+                        <option value="">COLLECTIONS </option>
+                        <option value="czstones">CZ STONES</option>
+                        <option value="back beads">BLACK BEADS</option>
+                        <option value="adstones">AD STONES</option>
+                        <option value="earchains">EAR CHAINS</option>
+                        <option value="handcuff">HAND CUFF</option>
+                        <option value="rings">RINGS</option>
+                        <option value="tikka">TIKKA</option>
+                        <option value="invisiblechains">INVISIBLE CHAINS</option>
+
+                    </select>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+
+    <div class="cart">
+        <h2 class="cart-title">Shopping Cart</h2>
+        <div class="cart-content">
+        </div>
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">₹0</div>
+        </div>
+        <button class="btn-buy">Buy Now</button>
+        <i class='bx bx-x' id="cart-close"></i>
+    </div>
+
+    <div class="menubar">
+        <h2 class="menu-title"> <i class='bx bxs-user-circle'></i> Hello,Welcome</h2>
+        <div class="menu-list">
+            <h4> <i class='bx bx-user-circle'></i> Your Account</h4>
+            <h4> <i class='bx bx-heart'></i> Your Wishlist</h4>
+            <i class='bx bx-x' id="menu-close"></i>
+        </div>
+    </div>
+    <div class="search">
+        <div class="row">
+            <input type="text" id="searchbar" placeholder="Search anything..." autocomplete="off"> <i
+                class='bx bx-search'></i>
+        </div>
+        <div class="search-box">
+            <ul>
+                <li>necklaces</li>
+                <li>bangles</li>
+            </ul>
+        </div>
+        <i class='bx bx-x' id="search-close"></i>
+    </div>
+    <div id="main">
+        <div id="image-con">
+            <div class="image-wrapper">
+                <img class="image-display" src="images/image1.jpeg" alt="Image">
+                <img class="image-display" src="images/image2.jpeg" alt="Image">
+                <img class="image-display" src="images/image3.jpeg" alt="Image">
+                <img class="image-display" src="images/image4.jpeg" alt="Image">
+            </div>
+        </div>
+        <div class="pagination">
+            <button id="prevbtn">
+                < </button>
+                    <span id="dots"></span>
+                    <button id="nextbtn"> > </button>
+        </div>
+
+        <div id="products">
+            <div id="image-prod">
+                <div class="img-con">
+                    <img class="images" src="images/neck.jpg">
+                    <div class="overlay">
+                        <i class='bx bx-heart'></i>
+                        <p class="price">₹455</p>
+                        <i class='bx bx-shopping-bag' onclick="addtocart()"></i>
+                    </div>
+                </div>
+
+                <div class="img-con">
+                    <img class="images" src="images/bangle.jpg">
+                    <div class="overlay">
+                        <i class='bx bx-heart'></i>
+                        <p class="price">₹400</p>
+                        <i class='bx bx-shopping-bag' onclick="addtocart()"></i>
+
+                    </div>
+                </div>
+
+                <div class="img-con">
+                    <img class="images" src="images/tikka.jpg" alt="image">
+                    <div class="overlay">
+                        <i class='bx bx-heart'></i>
+                        <p class="price">₹350</p>
+                        <i class='bx bx-shopping-bag' onclick="addtocart()"></i>
+                    </div>
+                </div>
+
+                <div class="img-con">
+                    <img class="images" src="images/b.jpg" alt="image">
+                    <div class="overlay">
+                        <i class='bx bx-heart'></i>
+                        <p class="price">₹500</p>
+                        <i class='bx bx-shopping-bag' onclick="addtocart()"></i>
+                    </div>
+                </div>
+
+                <div class="img-con">
+                    <img class="images" src="images/nakshi.jpg" alt="image">
+                    <div class="overlay">
+                        <i class='bx bx-heart'></i>
+                        <p class="price">₹550</p>
+                        <i class='bx bx-shopping-bag' onclick="addtocart()"></i>
+                    </div>
+                </div>
+
+                <div class="img-con">
+                    <img class="images" src="images/earr.jpg" alt="image">
+                    <div class="overlay">
+                        <i class='bx bx-heart'></i>
+                        <p class="price">₹459</p>
+                        <i class='bx bx-shopping-bag' onclick="addtocart()"></i>
+                    </div>
+                </div>
+
+                <div class="img-con">
+                    <img class="images" src="images/ban2.jpeg" alt="image">
+                    <div class="overlay">
+                        <i class='bx bx-heart'></i>
+                        <p class="price">₹300</p>
+                        <i class='bx bx-shopping-bag' onclick="addtocart()"></i>
+                    </div>
+                </div>
+
+                <div class="img-con">
+                    <img class="images" src="images/chokerr.jpg" alt="image">
+                    <div class="overlay">
+                        <i class='bx bx-heart'></i>
+                        <p class="price">₹450</p>
+                        <i class='bx bx-shopping-bag' onclick="addtocart()"></i>
+                    </div>
+                </div>
+
+                <div class="img-con">
+                    <img class="images" src="images/ban9.jpeg" alt="image">
+                    <div class="overlay">
+                        <i class='bx bx-heart'></i>
+                        <p class="price">₹500</p>
+                        <i class='bx bx-shopping-bag' onclick="addtocart()"></i>
+                    </div>
+                </div>
+
+                <div class="img-con">
+                    <img class="images" src="images/ear7.jpeg" alt="image">
+                    <div class="overlay">
+                        <i class='bx bx-heart'></i>
+                        <p class="price">₹650</p>
+                        <i class='bx bx-shopping-bag' onclick="addtocart()"></i>
+                    </div>
+                </div>
+
+                <div class="img-con">
+                    <img class="images" src="images/neck2.jpeg" alt="image">
+                    <div class="overlay">
+                        <i class='bx bx-heart'></i>
+                        <p class="price">₹350</p>
+                        <i class='bx bx-shopping-bag' onclick="addtocart()"></i>
+                    </div>
+                </div>
+
+                <div class="img-con">
+                    <img class="images" src="images/tik7.jpeg" alt="image">
+                    <div class="overlay">
+                        <i class='bx bx-heart'></i>
+                        <p class="price">₹300</p>
+                        <i class='bx bx-shopping-bag' onclick="addtocart()"></i>
+                    </div>
+                </div>
+
+                <div class="img-con">
+                    <img class="images" src="images/neck9.jpeg" alt="image">
+                    <div class="overlay">
+                        <i class='bx bx-heart'></i>
+                        <p class="price">₹559</p>
+                        <i class='bx bx-shopping-bag' onclick="addtocart()"></i>
+                    </div>
+                </div>
+
+                <div class="img-con">
+                    <img class="images" src="images/tik6.jpeg" alt="image">
+                    <div class="overlay">
+                        <i class='bx bx-heart'></i>
+                        <p class="price">₹299</p>
+                        <i class='bx bx-shopping-bag' onclick="addtocart()"></i>
+                    </div>
+                </div>
+
+                <div class="img-con">
+                    <img class="images" src="images/nose2.jpeg" alt="image">
+                    <div class="overlay">
+                        <i class='bx bx-heart'></i>
+                        <p class="price">₹200</p>
+                        <i class='bx bx-shopping-bag' onclick="addtocart()"></i>
+                    </div>
+                </div>
+
+
+                <div class="img-con">
+                    <img class="images" src="images/rin7.jpeg" alt="image">
+                    <div class="overlay">
+                        <i class='bx bx-heart'></i>
+                        <p class="price">₹250</p>
+                        <i class='bx bx-shopping-bag' onclick="addtocart()"></i>
+                    </div>
+                </div>
+
+                <h2>Shop Also</h2>
+                <div class="img-con">
+                    <img class="images" src="images/temm.jpg" alt="image">
+                    <div class="overlayy">
+                        <h4 class="hidden">Nakshi Jewellery</h4>
+                    </div>
+                </div>
+
+                <div class="img-con">
+                    <img class="images" src="images/bead.jpg" alt="image">
+                    <div class="overlayy">
+                        <h4 class="hidden">Bead Jewellery</h4>
+                    </div>
+                </div>
+
+                <div class="img-con">
+                    <img class="images" src="images/temm1.jpg" alt="image">
+                    <div class="overlayy">
+                        <h4 class="hidden">Temple Jewellery</h4>
+                    </div>
+                </div>
+
+                <div class="img-con">
+                    <img class="images" src="images/one.jpg" alt="image">
+                    <div class="overlayy">
+                        <h4 class="hidden">Onegram Jewellery</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="imgg">
+            <img src="images/logo1.jpeg" alt="logo" id="pic">
+        </div>
+
+        <div class="details">
+            <p><strong>Phone:</strong> +91-9441216772</p>
+            <p><strong>Email:</strong>singamsetty@gmail.com</p>
+            <p><strong>Instagram:</strong> <a href="https://instagram.com/yourprofile"
+                    target="_blank">fancy_jewellerystore</a></p>
+            <p><strong>Address:</strong>Vulli Veedhi, Vizianagaram </p>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

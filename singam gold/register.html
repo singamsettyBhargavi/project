@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color:darkolivegreen;
+}
+h2{
+    text-align: center;
+    padding: 50px;
+}
+#reg{
+    width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: #f9f9f9;
+}
+#first,#last,#phone,#emaill,#pass1,#pass2{
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+    color:black;
+    font-size: 16px;
+    border-radius: 20px;
+}
+#btn{
+    border: 2px solid olive;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+}
+#btn:hover{
+    background-color: olivedrab;
+    cursor: pointer;
+}
+#login p a{
+    color: blue;
+    text-decoration: none;
+    font-weight: 600;
+}
+#login p a:hover{
+    text-decoration: underline;
+}
+#first{
+    position: relative; 
+    margin-bottom: 0px;
+}
+#first i {
+    position: absolute;
+    right:30%;
+    top:30%;
+    transform: translate(-50%);
+    color: black;
+}
+#first:hover{
+    transform: scale(1.1);
+}
+#last:hover{
+    transform: scale(1.1);
+}
+#phone:hover{
+    transform: scale(1.1);
+}
+#emaill:hover{
+    transform: scale(1.1);
+}
+#pass1:hover{
+    transform: scale(1.1);
+}
+#pass2:hover{
+    transform: scale(1.1);
+}
+</style>
+
+</head>
+<body>
+    <div id="reg">
+    <h2>REGISTATION</h2>
+    <form action="" onsubmit="return validates()">
+        <div id="first">
+            <input type="text" placeholder="Firstname" id="first" required>
+        <i class='bx bx-user'></i>
+        </div>
+       <div id="first">
+        <input type="text" placeholder="Lastname"  id="last" required>
+        <i class='bx bx-user'></i> 
+       </div>
+        <div id="first">
+            <input type="tel" id="phone" placeholder="Phonenumber">
+        <i class='bx bx-mobile'></i>
+        </div>
+        <div id="first">
+            <input type="email" id="emaill" placeholder="Enter email">
+        <i class='bx bx-envelope'></i>
+        </div>
+        <div id="first">
+            <input type="password" id="pass1" placeholder="Enter passord">
+        <i class='bx bx-lock'></i>
+        </div>
+        <div id="first">
+            <input type="password" id="pass2" placeholder="Confirm password">
+        <i class='bx bx-lock'></i> <br> <br>
+        </div>
+        <button type="submit" id="btn">Register</button>
+        <div id="login">
+        <p>Already have account  <a href="login.html"> Login</a></p>
+    
+    </div>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>

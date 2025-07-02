@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
+      <style>
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color:darkolivegreen;
+}
+.hiii{
+    width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: #f9f9f9;
+}
+h2{
+    text-align: center;
+    padding: 50px;
+}
+#namee,#pass{
+    padding: 10px 10px 10px 10px;
+    color:black;
+    font-size: 16px;
+    border-radius: 20px;
+}
+#bnt{
+    border: 2px solid olive;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+}
+#bnt:hover{
+    background-color: olivedrab;
+    cursor: pointer;
+}
+.account{
+    padding: 10px;
+}
+.acc,.acc1{
+    display: inline-block;
+    border: 1px solid black;
+    padding: 5px;
+   
+}
+#a1,#a2{
+    text-decoration: none;
+    color: black;
+}
+.register p a{
+    color: blue;
+    text-decoration: none;
+    font-weight: 600;
+}
+.register p a:hover{
+    text-decoration: underline;
+}
+#namee:hover{
+    transform: scale(1.1);
+    /* background-color: darkolivegreen; */
+}
+#pass:hover{
+    transform: scale(1.2);
+    /* background-color: darkolivegreen; */
+}
+      </style>
+</head>
+<body>
+    
+    <div class="hiii">
+        <h2>LOGIN</h2>
+    <form action="#"  onsubmit="return validate()">
+        <input type="text" id="namee" placeholder="Enter name">
+        <input type="password" id="pass" placeholder="Password"> <br> <br>
+        <button type="submit" id="bnt" >  Login </button> <br>
+        
+        <div class="register">
+                <p>Dont have a account? <a href="register.html"> Register</a></p>
+            </div>
+        <!-- <div class="account">
+            <p>_________Or coutinue with_________</p>
+        </div>
+        <div class="acc">
+        <i class='bx bxl-google'></i>
+         <a href="#" id="a1">Sign in with Google  <br></a> 
+        </div>
+       <div class="acc1"> 
+        <i class='bx bxl-facebook-circle'></i>
+         <a href="#" id="a2">Sign in with Facebook </a>
+      </div> -->
+
+
+    </div>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
